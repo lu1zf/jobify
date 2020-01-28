@@ -1,3 +1,5 @@
+
+
 {
   "name": "jobify",
   "version": "1.0.0",
@@ -21,5 +23,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lu1zf/jobify.git"
   }
 }
