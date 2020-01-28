@@ -88,7 +88,7 @@ const init = async() => {
 }
 
 init()
-
+//comentário
 app.listen(3333, (err) => {
     if (err){
         console.log("Não foi possível iniciar o servidor do Jobify")
