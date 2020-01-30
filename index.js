@@ -96,6 +96,6 @@ app.listen(port, (err) => {
     if (err){
         console.log("Não foi possível iniciar o servidor do Jobify")
     } else {
-        console.log("Servidor do Jobify rodando")
+        console.log("Servidor rodando")
     }
 })
