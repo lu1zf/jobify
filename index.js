@@ -82,15 +82,14 @@ app.post('/admin/vagas/editar/:id', async(req,res) => {
 
 const init = async() => {
     const db = await dbConnection
-    //await db.run('create table if not exists categorias (id INTEGER PRIMARY KEY, categoria TEXT)')
-    //await db.run('create table if not exists vagas (id INTEGER PRIMARY KEY, categoria INTEGER, titulo TEXT, descricao TEXT)')
-    //const categoria = 'Marketing Team'
-    //await db.run(`insert into categorias (categoria) values('${categoria}')`)
-    //await db.run(`delete from categorias WHERE id = 2`)
+    // await db.run('create table if not exists categorias (id INTEGER PRIMARY KEY, categoria TEXT)')
+    // await db.run('create table if not exists vagas (id INTEGER PRIMARY KEY, categoria INTEGER, titulo TEXT, descricao TEXT)')
+    // const categoria = 'Marketing Team'
+    // await db.run(`insert into categorias (categoria) values('${categoria}')`)
+    // await db.run(`delete from categorias WHERE id = 2`)
 }
 
 init()
-//comentário
 app.listen(port, (err) => {
     if (err){
         console.log("Não foi possível iniciar o servidor do Jobify")
@@ -98,4 +97,3 @@ app.listen(port, (err) => {
         console.log("Servidor do Jobify rodando")
     }
 })
-//
