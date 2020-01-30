@@ -1,6 +1,7 @@
 const express = require('express')
 const sqlite = require('sqlite')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const path = require('path')
 
 const app = express()
@@ -9,6 +10,7 @@ const dbConnection = sqlite.open(path.resolve(__dirname, 'banco.sqlite'), {Promi
 const port = process.env.PORT || 3333
 
 app.set('view engine', 'ejs')
+app.use(cors())
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 
