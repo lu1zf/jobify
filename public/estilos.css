@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
+    width: 800px;
+    padding-left: 20%;
 }
 
 h1 {
@@ -22,6 +24,7 @@ li {
 h2 {
     background-color: #c4c4c4;
     padding: 8px;
+    text-align: center;
     font-size: 24px;
     border: 1px solid;
 }
@@ -50,4 +53,10 @@ textarea {
     width: 540px;
     height: 320px;
     font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding-left: 23%;
 }
