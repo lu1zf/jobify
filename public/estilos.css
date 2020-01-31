@@ -24,7 +24,7 @@ li {
 h2 {
     background-color: #c4c4c4;
     padding: 8px;
-    text-align: center;
+    /* text-align: ; */
     font-size: 24px;
     border: 1px solid;
 }
@@ -56,7 +56,31 @@ textarea {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
-    padding-left: 23%;
+    text-align: center;
+}
+
+form {
+    padding-left: 130px;
+}
+
+#nova_vaga {
+    text-align: left;
+    display: inline;
+}
+
+#nova_vaga  a {
+    /* text-align: justify; */
+    /* display: inline; */
+}
+
+#vagas {
+    text-align: right;
+    padding-left: 60%;
+    display: inline;
+}
+
+#admin_vagas {
+    text-align: center;
 }
