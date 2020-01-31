@@ -24,10 +24,9 @@ app.get('/', async(request, response) => {
             vagas: vagas.filter(vaga => vaga.categoria === cat.id)
         }
     })
-    // console.log(categorias)
-    // response.render('home', {
-    //     categorias
-    // })
+    response.render('home', {
+        categorias
+    })
 })
 
 app.get('/vaga/:id', async(request, response) => {
