@@ -6,3 +6,7 @@ https://appjobify.herokuapp.com/
 
 ## Authors
 * **Luiz Silva** - developed during fullstacklab, taught by devpleno.
+
+### Techs
+* Node.js
+* SQLite
