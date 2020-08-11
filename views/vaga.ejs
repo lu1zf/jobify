@@ -1,6 +1,20 @@
-<%- include('header') %>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <link href="/categorys.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+        <title>Jobify</title>
+    </head>
+    <body id="page-jobs">
+    
+    <h1>Description</h1>
+
     <h2><%- vaga.titulo %> </h2>
-    <div>
-        <%- vaga.descricao %> 
-    </div>
-<%- include('footer.ejs') %> 
+        <p><%- vaga.descricao %></p>
+
+</body>
+</html>

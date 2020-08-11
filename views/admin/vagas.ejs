@@ -1,20 +1,35 @@
-<%- include('header') %>
-    <h2>
-        <div id="admin_vagas"> Admin de Vagas </div>
-    </h2>
-    <h2>
-          <div id="nova_vaga"><a href="/admin/vagas/nova">Nova vaga</a></div>
-    </h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <link href="/categorys.css" rel="stylesheet">
+        <!-- <link href="/admin.css" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+        <title>Jobify</title>
+    </head>
+    <body id="page-category">
+    <h1>
+        Jobs list
+    </h1>
+          <div class="buttons-container"><a id="job-button" href="/admin/vagas/nova">New job opportunity</a></div>
     
-    <div>
+    
+    <div class="jobs-list">
         <ul>
             <% vagas.forEach(vaga => { %>
             <li>
                 <%- vaga.titulo %> |
-                <a href="/admin/vagas/delete/<%- vaga.id%>">Excluir</a>
-                <a href="/admin/vagas/editar/<%- vaga.id%>">Editar</a>
+                <a href="/admin/vagas/delete/<%- vaga.id%>">Delete</a>
+                <a href="/admin/vagas/editar/<%- vaga.id%>">Edit</a>
             </li>
             <% }) %>
         </ul>
     </div>
-<%- include('footer') %>
+    <div class="buttons-container">
+        <a id="job-button" href="/admin/">Back</a>
+    </div>
+    </body>
+    </html>

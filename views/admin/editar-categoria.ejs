@@ -1,17 +1,33 @@
-<%- include('header') %>
-    <h2>
-        Editar categoria:
-        <a href="/admin/categorias/">Categorias</a>
-    </h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <link href="/categorys.css" rel="stylesheet">
+        <!-- <link href="/admin.css" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+        <title>Jobify</title>
+    </head>
+    <body id="page-category">
+
+    <div id="edit-category">
+        <h1>
+            Edit category
+        </h1>
     
-    <div>
-        <form method="POST">
-            <label>Categoria:</label>
-            <input type="text" name="categoria" value="<%= categorias.categoria %>">
-            <br>
-            <!-- comentarios aqui-->
-            <button>Salvar categoria</button>
-        </form>
+        <div id="form-input">
+            <form method="POST">
+                <label>Name:</label>
+                <input type="text" name="categoria" value="<%= categorias.categoria %>">
+                <br>
+                <button>Save</button>
+            </form>
+        </div>
     </div>
-<%- include('footer') %> 
-<br>
+    <div class="buttons-container">
+        <a href="/admin/categorias/">Back</a>
+    </div>
+</body>
+</html>

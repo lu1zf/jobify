@@ -7,14 +7,18 @@ const path = require('path')
 const app = express()
 
 const dbConnection = sqlite.open(path.resolve(__dirname, 'banco.sqlite'), {Promise})
-const port = process.env.PORT || 3333
+const port = process.env.PORT || 4444
 
 app.set('view engine', 'ejs')
 app.use(cors())
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.get('/', async(request, response) => {
+app.get('/', (req, res) => {
+    res.render('landing')
+})
+
+app.get('/vagas', async(request, response) => {
     const db = await dbConnection
     const categoriasDb = await db.all('select * from categorias;')
     const vagas = await db.all('select * from vagas;')

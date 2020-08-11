@@ -1,18 +1,36 @@
-<%- include('header') %>
-    <h2>
-        Admin de Categorias:
-        <a href="/admin/categorias/nova">Nova categoria</a>
-    </h2>
-    
-    <div>
-        <ul>
-            <% categorias.forEach(categoria => { %>
-            <li>
-                <%- categoria.categoria %> |
-                <a href="/admin/categorias/delete/<%- categoria.id%>">Excluir</a>
-                <a href="/admin/categorias/editar/<%- categoria.id%>">Editar</a>
-            </li>
-            <% }) %>
-        </ul>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <link href="/categorys.css" rel="stylesheet">
+        <!-- <link href="/admin.css" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+        <title>Jobify</title>
+    </head>
+    <body id="page-category">
+    <div class="header-category">
+        <h1>
+            Manage categorys
+        </h1>
+        <div class="buttons-container">
+            <a href="/admin/categorias/nova">New category</a> 
+        </div>
     </div>
-<%- include('footer') %>
+    
+    <div id="page-categorys">
+        <div class="categorys-list">
+            <ul>
+                <% categorias.forEach(categoria => { %>
+                <li>
+                    <%- categoria.categoria %> |
+                    <a href="/admin/categorias/delete/<%- categoria.id%>">Delete</a>
+                    <a href="/admin/categorias/editar/<%- categoria.id%>">Edit</a>
+                </li>
+                <% }) %>
+            </ul>
+        </div>
+        
+    </div>
