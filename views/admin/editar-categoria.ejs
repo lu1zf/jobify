@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-        <link href="/categorys.css" rel="stylesheet">
-        <!-- <link href="/admin.css" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-        <title>Jobify</title>
-    </head>
-    <body id="page-category">
+    <link href="/styles/main.css" rel="stylesheet">
+    <link href="/styles/pagecategorys.css" rel="stylesheet">
+
+    <!-- <link href="/admin.css" rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+
+    <title>Jobify</title>
+</head>
+
+<body id="page-category">
+
+    <div class="page-header">
+        <a href="/admin/categorias">
+            <img src="/images/back.svg" alt="Back" srcset="" />
+        </a>
+        <div class="page-title">
+            <h1>
+                Edit category
+            </h1>
+        </div>
+    </div>
 
     <div id="edit-category">
-        <h1>
-            Edit category
-        </h1>
-    
         <div id="form-input">
             <form method="POST">
                 <label>Name:</label>
@@ -26,8 +39,6 @@
             </form>
         </div>
     </div>
-    <div class="buttons-container">
-        <a href="/admin/categorias/">Back</a>
-    </div>
 </body>
+
 </html>

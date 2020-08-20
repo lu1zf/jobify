@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="/styles/main.css" rel="stylesheet" />
+    <link href="/styles/pagejobs.css" rel="stylesheet" />
+    <!-- <link href="/categorys.css" rel="stylesheet" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Jobify</title>
+  </head>
+  <body id="page-jobs">
+    <div class="page-header">
+      <a href="/">
+        <img src="/images/back.svg" alt="Back" srcset="" />
+      </a>
+      <div class="page-title">
+        <h1>Job opportunities</h1>
+      </div>
+    </div>
+
+    <div class="all-jobs-box">
+      <% categorias.forEach(categoria => {%>
+      <div class="job-box">
+        <h3><%- categoria.categoria %></h3>
+
+        <ul id="jobs-list">
+          <% categoria.vagas.forEach(vaga => { %>
+
+          <li>
+            <p><a href="job/<%- vaga.id%>"><%- vaga.titulo %></a></p>
+          </li>
+
+          <% }) %>
+        </ul>
+      </div>
+
+      <% }); %>
+    </div>
+  </body>
+</html>

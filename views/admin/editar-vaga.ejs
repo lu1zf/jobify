@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-        <link href="/categorys.css" rel="stylesheet">
-        <!-- <link href="/admin.css" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-        <title>Jobify</title>
-    </head>
-    <body id="page-category">
-        <div id="edit-job">
-            <h2>
-                Editar vaga
-            </h2>
-        </div>
+  <link href="/styles/main.css" rel="stylesheet">
+  <link href="/styles/pagenew.css" rel="stylesheet">
 
-    <div class="buttons-container">
-    <a href="/admin/vagas/">Vagas</a>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+    rel="stylesheet">
 
+  <title>Jobify</title>
+</head>
+
+<body id="page-edit-job">
+  <div class="page-header">
+    <a href="/admin/vagas">
+      <img src="/images/back.svg" alt="Back" srcset="" />
+    </a>
+    <div class="page-title">
+      <h1>
+        Edit job opportunity
+      </h1>
     </div>
+  </div>
 
-    <div>
-        <form method="POST" id="form-job">
-            <label>Title:</label>
-            <input type="text" name="titulo" value="<%= vaga.titulo %>">
-            <br>
-            <label>Description:</label>
-            <textarea name="descricao"><%= vaga.descricao %> </textarea>
-            <br>
-            <label>Cagetogy:</label>
-            <select name="categoria">
-                <% categorias.forEach( categoria => { %> 
-                <option value="<%= categoria.id %>" <% if(categoria.id == vaga.categoria){%> selected <% } %> > <%= categoria.categoria %> </option>
-                <% })%> 
-            </select>
-            <br>
-            <button>Save</button>
-        </form>
-    </div>
+  <div id="edit-job">
+    <form method="POST" id="form-job">
+      <label>Title:</label>
+      <input type="text" name="titulo" value="<%= vaga.titulo %>">
+      <br>
+      <div class="job-description">
+        <label>Description:</label>
+        <textarea name="descricao"><%= vaga.descricao %> </textarea>
+        <br>
+      </div>
+
+      <div class="job-category">
+        <label>Cagetory:</label>
+        <select name="categoria">
+          <% categorias.forEach( categoria => { %>
+          <option value="<%= categoria.id %>" <% if(categoria.id == vaga.categoria){%> selected <% } %>>
+            <%= categoria.categoria %> </option>
+          <% })%>
+        </select>
+        <br>
+      </div>
+
+
+      <button>Save</button>
+
+    </form>
+  </div>
+</body>
+
+</html>

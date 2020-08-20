@@ -1,0 +1,84 @@
+body {
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+}
+
+#container img {
+  width: 100%;
+}
+
+#page-landing .logo-container {
+  text-align: center;
+}
+
+#page-landing .logo-container h1 {
+  font-size: 8rem;
+  margin-bottom: 0;
+}
+
+#page-landing .logo-container h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+
+@media (max-width: 1100px) {
+  :root {
+    font-size: 60%;
+  }
+
+  .hero-image {
+    height: 60rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  #page-landing #container .logo-container {
+    border-top: 300px;
+  }
+  #page-landing #container {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 350px 1fr;
+    grid-template-areas:
+      'proffy image image'
+      'button button texting';
+    column-gap: 87px;
+    row-gap: 86px;
+  }
+  .logo-container {
+    grid-area: proffy;
+    text-align: initial;
+    align-self: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .hero-image {
+    grid-area: image;
+    height: 350px;
+  }
+
+  #page-landing .logo-container h1 {
+    text-align: left;
+  }
+
+  #page-landing .logo-container h2 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .buttons-container {
+    /* background-color: red; */
+    grid-area: button;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .buttons-container a {
+    width: 15rem;
+    height: 5rem;
+  }
+}

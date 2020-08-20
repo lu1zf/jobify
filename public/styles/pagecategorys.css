@@ -1,0 +1,78 @@
+#page-categorys,
+#edit-category {
+  width: 70vw;
+  margin-left: 15vw;
+  background-color: var(--color-text-base);
+  padding: 0.8rem;
+  color: white;
+  border-radius: 0.5rem;
+  margin-top: -1.8rem;
+}
+
+.buttons-container {
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.buttons-container a {
+  height: 4rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  margin-right: 0;
+}
+
+#page-categorys .categorys-list ul li{
+  list-style: none;
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+
+#page-categorys .categorys-list ul li:first-of-type{
+  padding-top: 1.5rem;
+}
+
+#page-categorys .categorys-list ul li a img{
+  width: 2rem;
+  margin-left: 2rem;
+}
+
+#edit-category form {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#edit-category form label {
+  margin-right: 1rem;
+}
+
+#edit-category form button{
+  margin-top: 1rem;
+  background-color: #05668d;
+  color: #ffffff;
+  text-decoration: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+#edit-category form button:hover{
+    background: #457b9d;
+}
+
+input[type="text"] {
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  text-align: center;
+  width: 25rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}

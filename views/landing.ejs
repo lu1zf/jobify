@@ -1,16 +1,36 @@
-<%- include('header-landing') %>
-<div id="container">
-    <div class="logo-container">
-      <h1>Jobify</h1>
-      <h2>Connecting people to open roles</h2>
-    </div>
-    <div class="hero-image">
-    <img src="images/interview.svg" alt="portfolio">
-    </div>
-    <div class="buttons-container">
-      <a href="/vagas">Open roles</a>
-      <a href="/admin">Admin</a>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/styles/main.css" rel="stylesheet" />
+    <link href="/styles/landing.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
 
-<%- include('footer.ejs') %> 
+    <title>Jobify</title>
+  </head>
+  <body id="page-landing">
+    <div id="container">
+      <div class="logo-container">
+        <h1>Jobify</h1>
+        <h2>Connecting people to open roles</h2>
+      </div>
+      <div class="hero-image">
+        <img src="images/interview.svg" alt="portfolio" />
+      </div>
+      <div class="buttons-container">
+        <a href="/jobs">Open roles</a>
+        <a href="/admin">Admin</a>
+      </div>
+    </div>
+    <footer>
+      <!-- <p>Site desenvolvido por: <a href="https://github.com/lu1zf" target="_blank">Luiz Silva</a></p> -->
+    </footer>
+  </body>
+</html>

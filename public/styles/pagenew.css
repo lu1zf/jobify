@@ -1,0 +1,118 @@
+#new-category,
+#new-job,
+#edit-job {
+  width: 70vw;
+  margin-left: 15vw;
+  background-color: var(--color-text-base);
+  padding: 0.8rem;
+  color: white;
+  border-radius: 0.5rem;
+  margin-top: -1.8rem;
+}
+
+.buttons-container {
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.buttons-container a {
+  height: 4rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  margin-right: 0;
+}
+
+#new-category form,
+#new-job form,
+#edit-job form {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#new-category form label {
+  margin-right: 1rem;
+}
+
+#new-category form button {
+  margin-top: 1rem;
+  background-color: #05668d;
+  color: #ffffff;
+  text-decoration: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+#new-job form label,
+#edit-job form label {
+  margin-right: 1rem;
+}
+
+#new-job form button,
+#edit-job form button {
+  margin-top: 1rem;
+  background-color: #05668d;
+  color: #ffffff;
+  text-decoration: none;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+#new-category form button:hover,
+#new-job form button:hover,
+#edit-job form button:hover {
+  background: #457b9d;
+}
+
+#new-job form textarea,
+#edit-job form textarea {
+  padding: .5rem;
+  font-size: 1.3rem;
+  width: 60%;
+}
+
+#new-job select,
+#edit-job select {
+  padding: .5rem;
+  font-size: 1.3rem;
+}
+
+.job-description{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-category {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"] {
+  font-size: 1.3rem;
+  padding: .5rem;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  text-align: center;
+  width: 25rem;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}

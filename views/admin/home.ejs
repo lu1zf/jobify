@@ -1,11 +1,38 @@
-<%- include('header') %>
-<div id="container">
-    <div class="admin-header">
-        <h1>Administrative Panel</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="/styles/main.css" rel="stylesheet" />
+  <link href="/styles/pageadmin.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+    rel="stylesheet" />
+
+  <title>Jobify</title>
+</head>
+
+<body id="page-admin">
+  <div class="page-header">
+    <a href="/">
+      <img src="/images/back.svg" alt="Back" srcset="" />
+    </a>
+    <div class="page-title">
+      <h1>Administrative Panel</h1>
     </div>
-    
+  </div>
+
+  <div class="options-box">
     <div class="buttons-container">
-    <a href="/admin/categorias">Manage categorys</a>
-    <a href="/admin/vagas">Manage job opportunities</a>
+      <div class="option">
+        <a href="/admin/categorias">Manage categorys</a>
+      </div>
+      <div class="option">
+        <a href="/admin/vagas">Manage opportunities</a>
+      </div>
     </div>
-</div>  
+  </div>
+</body>
+
+</html>

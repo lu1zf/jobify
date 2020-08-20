@@ -1,0 +1,36 @@
+.jobs-list {
+  width: 70vw;
+  margin-left: 15vw;
+  background-color: var(--color-text-base);
+  padding: 0.8rem;
+  color: white;
+  border-radius: 0.5rem;
+  margin-top: -1.8rem;
+}
+
+.jobs-list ul li{
+  list-style: none;
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+
+.jobs-list ul li:first-of-type{
+  padding-top: 1.5rem;
+}
+
+.jobs-list ul li a img{
+  width: 2rem;
+  margin-left: 2rem;
+}
+
+.buttons-container {
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.buttons-container a {
+  width: 19rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+}
